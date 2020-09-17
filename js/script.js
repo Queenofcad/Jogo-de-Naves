@@ -172,6 +172,46 @@ function start() {
             reposicionaInimigo2();
             
         }
+
+        //disparo inimigo 1
+        if (colisao3.length > 0) {
+            inimigo1X = parseInt($("#inimigo1").css("left"));
+            inimigo1Y = parseInt($("#inimigo1").css("top"));
+            explosao1(inimigo1X, inimigo1Y);
+
+            explosao1(inimigo1X, inimigo1Y);
+            $("#disparo").css("left", 950);
+
+            posicaoY = parseInt(Math.random() * 334);
+            $("#inimigo1").css("left", 694);
+            $("#inimigo1").css("top", posicaoY);
+        }
+
+        //disparo inimigo 2
+        if (colisao4.length > 0) {
+            inimigo2X = parseInt($("#inimigo2").css("left"));
+            inimigo2Y = parseInt($("#inimigo2").css("top"));
+            $("#inimigo2").remove();
+
+            explosao2(inimigo2X, inimigo2Y);
+            $("#disparo").css("left", 950);
+
+            reposicionaInimigo2();
+        }
+
+        //jogador amigo
+        //if (colisao5.length > 0) {
+        //    inimigo1X = parseInt($("#inimigo1").css("left"));
+        //    inimigo1Y = parseInt($("#inimigo1").css("top"));
+        //    explosao1(inimigo1X, inimigo1Y);
+
+        //    explosao1(inimigo1X, inimigo1Y);
+        //    $("#disparo").css("left", 950);
+
+        //    posicaoY = parseInt(Math.random() * 334);
+       //     $("#inimigo1").css("left", 694);
+        //    $("#inimigo1").css("top", posicaoY);
+        }
     }
 
     function explosao1(inimigo1X, inimigo1Y) {
