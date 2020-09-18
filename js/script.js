@@ -373,7 +373,7 @@ function start() {
         $("#inimigo2").remove();
         $("#amigo").remove();
 
-        $("#fundoGame").append("<div id='fim'</div");
+        $("#fundoGame").append("<div id='fim'></div");
         
         $("#fim").html("<h1> Game Over </h1><p>Sua ponuação foi: " + pontos + " </p> " +  "<div id='reinicia' onClick=reiniciaJogo()><h3>Jogar Novamente</h3></div>");
     }
